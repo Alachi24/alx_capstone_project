@@ -17,4 +17,4 @@ JavaScript
 
 ### Flowchart
 
-https://lucid.app/lucidchart/a76ab908-f662-491e-8882-ceef0d6b0edb/edit?viewport_loc=-2234%2C-1330%2C2220%2C1026%2C0_0&invitationId=inv_d372db75-27bc-4305-883c-756bada4831c
+https://lucid.app/publicSegments/view/a78d5bfd-e755-4735-90d1-6abb9bea9b4b/image.png
