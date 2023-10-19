@@ -3,6 +3,7 @@
 const inputBox = document.getElementById("input-box");
 const listContainer = document.getElementById("list-container");
 
+//Render the created element on the browser
 function addTask() {
   if (inputBox.value === "") {
     alert("Something must be Written 😒!");
@@ -15,4 +16,32 @@ function addTask() {
     li.appendChild(span);
   }
   inputBox.value = "";
+  saveData();
 }
+
+// to activate the checked, unchecked and delete btn
+
+listContainer.addEventListener(
+  "click",
+  function (e) {
+    if (e.target.tagName === "LI") {
+      e.target.classList.toggle("checked");
+      saveData();
+    } else if (e.target.tagName === "SPAN") {
+      e.target.parentElement.remove();
+      saveData();
+    }
+  },
+  false
+);
+
+// add a localStorage to retain information
+function saveData() {
+  localStorage.setItem("data", listContainer.innerHTML);
+}
+
+// Render it to the browser
+function showTask() {
+  listContainer.innerHTML = localStorage.getItem("data");
+}
+showTask();
