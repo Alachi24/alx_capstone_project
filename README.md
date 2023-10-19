@@ -20,5 +20,3 @@ JavaScript
 https://lucid.app/publicSegments/view/a78d5bfd-e755-4735-90d1-6abb9bea9b4b/image.png
 
 ### Outcome
-
-![Alt text](<To-do List app 1.jpg>)
